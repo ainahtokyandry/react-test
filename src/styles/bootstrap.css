@@ -1,0 +1,46 @@
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.text-dark {
+    color: #282c34;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+}.text-red {
+    color: rgb(255 62 62);
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}

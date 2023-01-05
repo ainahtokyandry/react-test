@@ -1,0 +1,38 @@
+.modal {
+    width: clamp(50%, 700px, 90%);
+    height: min(50%, 300px);
+    margin: auto;
+    padding: 0 2rem;
+    border-radius: 12px;
+    flex-direction: column;
+    background-color: #282c34;
+    position: relative;
+}
+
+.modal .btn-close {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    height: fit-content;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8823529411764706);
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.backdrop,
+.modal {
+    display: flex;
+    align-items: center;
+}

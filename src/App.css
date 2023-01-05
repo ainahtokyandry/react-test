@@ -1,27 +1,61 @@
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: #282c34;
+  }
+
+  .error,
+  figure {
+    background: #282c34;
+  }
+}
+
+.error {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255 62 62);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+figure {
   pointer-events: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+  font-size: xx-large;
+}
+
+figure img {
+  width: 100vh;
+}
+
+figure p {
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .loading {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -32,7 +66,41 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 20rem;
+  width: fit-content;
+  margin: auto;
+}
+
+* {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h3 {
+  font-size: xx-large;
+}
+
+span,
+p {
+  margin: auto;
+  margin-top: 0;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

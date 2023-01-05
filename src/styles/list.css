@@ -1,0 +1,20 @@
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 20rem;
+    margin-bottom: auto;
+    margin-top: 0;
+    width: 100%;
+}
+
+li,
+button {
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+    height: 2rem;
+    font-size: initial;
+}
